@@ -53,21 +53,5 @@ public class BooksController : ControllerBase
         }
         return booksQueried;
     }
-    //[HttpPost("/merge")]
-    // public async ActionResult<Task<IEnumerable<Book>>> MergeChars([FromBody]string book, [FromBody]string mainCharacter, [FromBody] List<string> charactersToMerge)
-    // {
-    //     var bookResolved = await _booksCollection.Find(b => book == b.Name).FirstOrDefaultAsync();
 
-    //     var main = bookResolved.Characters?.Where(c => c.Name == mainCharacter)?.FirstOrDefault();
-
-    //     var otherCharacters = bookResolved?.Characters?.Where(c => charactersToMerge.Contains(c.Name)).ToList();
-
-    //     main?.CoreferenceList.Concat(otherCharacters?.Select(c => c.Name));
-        
-    //     main.Count += otherCharacters.Select(c => c.Count).Sum();
-    //     //remove characters from db
-
-    //     //await _booksCollection.DeleteMany()
-
-    // }
 }
